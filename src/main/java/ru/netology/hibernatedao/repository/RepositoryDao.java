@@ -18,7 +18,7 @@ public class RepositoryDao {
     public List<Persons> getPersonsByCity(String city){
 
         return entityManager
-                .createQuery("from Persons where city_of_living = :city", Persons.class).setParameter("city",city)
+                .createQuery("from Persons where cityOfLiving = :city", Persons.class).setParameter("city",city)
                 .getResultList();
 
     }

@@ -9,8 +9,11 @@ public class Persons {
 
     @EmbeddedId
     private Contact contact;
-    @Column(nullable = false)
-    private String city_of_living;
+    @Column(name = "city_of_living", nullable = false)
+    private String cityOfLiving;
+
+    @Column(name = "phone_number")
+    private String phoneNumber;
 
     public Persons() {
     }
